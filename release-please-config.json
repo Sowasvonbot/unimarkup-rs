@@ -1,0 +1,31 @@
+{
+  "packages": {
+    "unimarkup-rs": {
+      "release-type": "rust"
+    }
+  },
+  "include-component-in-tag": false,
+  "bump-minor-pre-major": true,
+  "changelog-sections": [
+    {
+      "type": "feat",
+      "section": "Features",
+      "hidden": false
+    },
+    {
+      "type": "fix",
+      "section": "Bug Fixes",
+      "hidden": false
+    },
+    {
+      "type": "arch",
+      "section": "Architecture/Refactor",
+      "hidden": false
+    },
+    {
+      "type": "chore",
+      "section": "Miscellaneous",
+      "hidden": true
+    }
+  ]
+}
