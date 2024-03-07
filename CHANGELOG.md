@@ -1,5 +1,87 @@
 # Changelog
 
+## [0.5.0](https://www.github.com/Sowasvonbot/unimarkup-rs/compare/v0.4.0...v0.5.0) (2024-03-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* improve unimarkup-inline API and implementation (#97)
+
+### Features
+
+* add bullet list element parsing and rendering ([#111](https://www.github.com/Sowasvonbot/unimarkup-rs/issues/111)) ([ff6f3af](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/ff6f3afc5ea7b7daf41c476214e853ba6f609608))
+* add citation element ([#120](https://www.github.com/Sowasvonbot/unimarkup-rs/issues/120)) ([b133fb6](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/b133fb6de88499c051d324dccce1a2907e8f936a))
+* add compiled binaries to release ([cc2f462](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/cc2f46237e0ff800d5d6afdeff35d68417b2cf0d))
+* add distinct references ([#127](https://www.github.com/Sowasvonbot/unimarkup-rs/issues/127)) ([5d8ffef](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/5d8ffef05a5daa3ee37f01b4ea7c16419cc94ec3))
+* add initial pdf support ([#114](https://www.github.com/Sowasvonbot/unimarkup-rs/issues/114)) ([498ca1f](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/498ca1f3d7b06dd4d73de620249e8b83387284ed))
+* add log filter ([#98](https://www.github.com/Sowasvonbot/unimarkup-rs/issues/98)) ([987d1af](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/987d1affb49178e8da1c851829bc58cb4ec8702b))
+* add rendering for inline math ([#124](https://www.github.com/Sowasvonbot/unimarkup-rs/issues/124)) ([53ec8c6](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/53ec8c62816c785e7c3abab332bfdea895eaef29))
+* add rendering for textbox and hyperlink ([#119](https://www.github.com/Sowasvonbot/unimarkup-rs/issues/119)) ([10bbdf0](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/10bbdf0ff9ee46fdcaddac494f5f057bfe5b227c))
+* add spec_test macro ([6065aab](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/6065aab8a33da3c058791ac5ea5753d8c44ae5f6))
+* create SymbolIterator for block parsing ([#106](https://www.github.com/Sowasvonbot/unimarkup-rs/issues/106)) ([dd98ae2](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/dd98ae249043938bb023956b8ead54845cc95dbe))
+* impl visitor pattern for rendering ([#90](https://www.github.com/Sowasvonbot/unimarkup-rs/issues/90)) ([c75a841](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/c75a841750e334a319d518ec7e952f7f2cbc0bf3))
+* implement initial umi format rendering ([#117](https://www.github.com/Sowasvonbot/unimarkup-rs/issues/117)) ([6ca03cd](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/6ca03cd0677eebbe71aa638565e0d0813b9e2c61))
+* move to new logid approach ([#88](https://www.github.com/Sowasvonbot/unimarkup-rs/issues/88)) ([e86d9b5](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/e86d9b58e302b2823720a0a989230b7ee100449c))
+* remove icu_datagen ([#104](https://www.github.com/Sowasvonbot/unimarkup-rs/issues/104)) ([bcdd1ef](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/bcdd1ef003c4fd9b49d1b8bbbe82512b13b86da3))
+* run snapshot tests dynamically in unimarkup-core crate ([#105](https://www.github.com/Sowasvonbot/unimarkup-rs/issues/105)) ([94148b3](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/94148b36dd8306a765c7207fbaa1e8cf3e09c960))
+* update parser to use iterators for blocks and inlines ([#118](https://www.github.com/Sowasvonbot/unimarkup-rs/issues/118)) ([c1a4827](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/c1a48276a9de077aac832e4accc2f7cf09ce1ded))
+* use shared build workflow ([99cd069](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/99cd069f85f3979630495ca0da5ee4f6f523435b))
+
+
+### Bug Fixes
+
+* abstract scanning of symbols with a scanner  ([#89](https://www.github.com/Sowasvonbot/unimarkup-rs/issues/89)) ([e330a56](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/e330a5630e76e80c1b45ebb294ff98e107f0e1a0))
+* add issue templates ([bc74610](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/bc74610de05e0be5fce8080909ea05ed3ee857c7))
+* add missing and between conditions ([130ecbe](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/130ecbef480975f3190f90e897e1270e97a0d941))
+* avoid collecting iterator during token resolving ([#112](https://www.github.com/Sowasvonbot/unimarkup-rs/issues/112)) ([5c9db5a](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/5c9db5ae1aa330e21acb69c20f060a9b900c8886))
+* change to Apache 2.0 license and general cleanup ([#109](https://www.github.com/Sowasvonbot/unimarkup-rs/issues/109)) ([10acfb0](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/10acfb0c5623d904d55fd171b927f7d02fdfca06))
+* do not panic when config validation fails ([#96](https://www.github.com/Sowasvonbot/unimarkup-rs/issues/96)) ([d247922](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/d247922f5cd12c795e0fa73016fc3acda841a680))
+* fallback to release-please v2 due to monorepo ([6ff4562](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/6ff45629395f2fef4d90dad698bfd91e9111debb))
+* improve unimarkup-inline API and implementation ([#97](https://www.github.com/Sowasvonbot/unimarkup-rs/issues/97)) ([eb39b7b](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/eb39b7b8da5554a7f7f26b9662ee5c367ad788a8))
+* make test_runner macros filepath independent ([d4b4091](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/d4b4091793bbfd7edcb06e3a9a78126535784270))
+* remove additional dot in filename ([5cbbab8](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/5cbbab81d34db7d9d21135a220222495533e222b))
+* remove additional dot in filename ([d72c3d6](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/d72c3d69a6b433c74059f15aa6460f23ab6fab8c))
+* remove release-please title pattern ([e6ee2cd](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/e6ee2cd7313f7ca7a0951231cc59dc154d033b44))
+* resolve errors after rebase ([df9628a](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/df9628a3a5c95939a2f9f952e7cbf431cc496e42))
+* restructure release please to run it first before even building artifacts ([c834304](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/c8343044e2df096553996a841e0073a1fc97224b))
+* restructure release please to run it first before even building artifacts ([0326a03](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/0326a0355575431ae917c3f2d1ebbbb31ebb4b04))
+* restructure release please to run it first before even building artifacts ([48cd033](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/48cd03388c324c8ba63144b3051373038cfab110))
+* restructure release please to run it first before even building artifacts ([0793652](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/07936529e6e7a0dd474246ea22d30ec9946efb95))
+* restructure release please to run it first before even building artifacts ([e5a7d1e](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/e5a7d1ebdfe0d20d956eda8da56353c239e900ca))
+* restructure release please to run it first before even building artifacts ([f04a137](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/f04a137dbbaa74c5e24a72ec36a23be340d3e75e))
+* restructure release please to run it first before even building artifacts ([327bbde](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/327bbde4a8b80847eb149f784621c4f4ce0ddc32))
+* restructure release please to run it first before even building artifacts ([1a526f1](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/1a526f14b77b0284e1cd4b63ffbdb8598f8936b8))
+* restructure release please to run it first before even building artifacts ([383fb4f](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/383fb4fefef4e205417bd6ea4290727f9085df44))
+* restructure release please to run it first before even building artifacts ([51dcdd1](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/51dcdd14ab58a0288cdbdcf26eef1bf409538185))
+* restructure release please to run it first before even building artifacts ([48f0c1c](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/48f0c1c07f4ee7c2b50568c502f12101d6c6468e))
+* restructure release please to run it first before even building artifacts ([3b13111](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/3b131118370a99b6c032043a6e460fae83434041))
+* restructure release please to run it first before even building artifacts ([e378576](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/e3785764798cbe60fced14365e3ea78f103e9b89))
+* restructure release please to run it first before even building artifacts ([ee69067](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/ee69067acab0a38a3c03f3769860d7edee8e4ba0))
+* restructure release please to run it first before even building artifacts ([c65654a](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/c65654a7681789dfdafc414d1b1a1ee6825c4159))
+* restructure release please to run it first before even building artifacts ([3483d01](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/3483d01ddedd11322f4cb63c0b155e59b16af7a2))
+* restructure release please to run it first before even building artifacts ([6341f41](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/6341f411862f377f6f4a328aca1ad77ab7b15901))
+* restructure release please to run it first before even building artifacts ([c79297a](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/c79297affc5035f66d4894de41192b664321f60c))
+* restructure release please to run it first before even building artifacts ([7283a8d](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/7283a8dff969a9d01aff9bf490ed6431235a6be3))
+* restructure release please to run it first before even building artifacts ([bfd7197](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/bfd7197d3caa45f50fc9ca263066d484235e5b3c))
+* restructure release please to run it first before even building artifacts ([7ca4308](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/7ca4308d36a37cdeddd9ff799607023fa35ca799))
+* restructure release please to run it first before even building artifacts ([b07deb9](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/b07deb9efedb160b1170f1f2312f7eaa81f140e1))
+* restructure release please to run it first before even building artifacts ([8f0bde2](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/8f0bde2299615d9c87ff8c16c0c92a3f4f231c15))
+* restructure release please to run it first before even building artifacts ([65bdf2f](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/65bdf2f6aa246279e86a34f02aeb9e96b8baf536))
+* restructure release please to run it first before even building artifacts ([8a4de88](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/8a4de8805176ddf0a1eaf5327648d936ed9c1f41))
+* restructure release please to run it first before even building artifacts ([74f8efc](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/74f8efc54baf15839dffa85cc26f84e94e27f79b))
+* restructure release please to run it first before even building artifacts ([b4848e7](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/b4848e7c503de52213fd9cf8261f7415aec850aa))
+* restructure release please to run it first before even building artifacts ([6e9612a](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/6e9612af869ded08121c597bdceac9b2b260aca6))
+* restructure release please to run it first before even building artifacts ([818e0b1](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/818e0b1b286da29f7c9f2a017ab21241c6bb30ef))
+* restructure release please to run it first before even building artifacts ([34a8a62](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/34a8a62d520e2b3c19c4500003f55bd70f3a7992))
+* try to review release please ([101f62b](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/101f62b4f2a9ba3a76f4c4b7806915cae09200e1))
+* update release please version ([cd19e5b](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/cd19e5b7489d69113690a017ed4b7fbbca77acb9))
+* update release-please version ([efc0a9c](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/efc0a9c2c0987e73ccd7a0ad7c39aeb80ceac273))
+* update upload archive workflow ([7523edc](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/7523edc02b64b5ed58b5b2d6e5d63900afd7b01d))
+* use commons Symbol in inlines crate ([#86](https://www.github.com/Sowasvonbot/unimarkup-rs/issues/86)) ([e1b2a53](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/e1b2a53b1f6e6a4b8c2c7f2ea0704dbf009cf962))
+* use correct format for json array ([68fb836](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/68fb836293f5cc5c3bc3b2af275d3503efb3bfc2))
+* use correct fromJSON method ([db40288](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/db402885e70f5a137dd061a3de9c4c9dc0587619))
+* use correct JSON formatting in build file ([3f3ff13](https://www.github.com/Sowasvonbot/unimarkup-rs/commit/3f3ff130744780119ed16032ef56caa98d4a946b))
+
 ## [0.4.0](https://www.github.com/unimarkup/unimarkup-rs/compare/v0.3.0...v0.4.0) (2023-04-23)
 
 
